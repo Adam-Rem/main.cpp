@@ -1,0 +1,29 @@
+Stwórz klasę Challenger. Rozdziel klasę na dwa pliki Challenger.cpp i Challenger.h;
+
+Klasa powinna definiować:
+• pole counter typu całkowitego, które posiada domyślną wartość 1;
+
+• funkcję składową getCounter, umożliwiającą pobranie aktualnej wartości pola counter;
+
+• funkcję składową challengeValue, która jako argument przyjmuje inny obiekt typu Challenger (przez wartość) i wykonuje poniższą operację:
+
+if (challenger.counter > 5) {
+    throw BiggerThan5Exception();
+}
+if (challenger.counter > counter) {
+    challenger.counter++;
+} else {
+    counter++;
+}
+// !!!(Pamiętaj by zdefiniować wyjątek BiggerThan5Exception)!!!
+• funkcję składową challengeReferenced, która jako argument przyjmuje inny obiekt typu Challenger (przez referencję) i wykonuje poniższą operację:
+
+if (challenger.counter > 5) {
+    throw BiggerThan5Exception();
+}
+if (challenger.counter > counter) {
+    challenger.counter++;
+} else {
+    counter++;
+}
+// !!!(Pamiętaj by zdefiniować wyjątek BiggerThan5Exception)!!!
